@@ -1,0 +1,33 @@
+    <script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/TemplateData/UnityProgress.js"></script>  
+    <script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/UnityLoader.js"></script>
+    <style type="text/css">
+            .button{
+              background: url({{ site.baseurl }}/assets/unity/{{page.unity_dir}}/{{page.unity_img}}) no-repeat;
+              cursor:pointer;
+              border: none;
+              color: white;
+              font-size: 100px;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+        </style>
+    <script>
+      function runUnityLoader() {
+          const gameContainer = document.getElementById('gameContainer');
+          gameContainer.firstChild.remove()  //get rid of the button and replace it with the game
+          var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/builds.json", {onProgress: UnityProgress});
+      }
+    </script>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px">
+        <button type="button" class="button template-wrap" style="z-index:10" onclick="runUnityLoader(); style.display='none';">Click to Play</button>
+      </div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.setFullscreen(1)"></div>
+        <div class="title">{{page.unity}}</div>
+      </div>
+    </div>
