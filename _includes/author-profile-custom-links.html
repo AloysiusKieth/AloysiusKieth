@@ -1,7 +1,7 @@
-<!--
+{% if author.resume %}
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    <a href="https://drive.google.com/open?id={{ author.resume }}" itemprop="sameAs">
+      <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Resume
     </a>
   </li>
--->
+{% endif %}

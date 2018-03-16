@@ -89,14 +89,14 @@ author:
   bio              : "Game Designer & Developer"
   location         : "Singapore"
   email            : "aloysius.kieth@gmail.com"
-  uri              :
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/AloysiusKieth"
+  github           : "AloysiusKieth"
   gitlab           :
   google_plus      :
   keybase          :
@@ -113,6 +113,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  resume           : "1GMidFgLx5I1f-iP5j_7U2AsINUOBmgwp"
 
 
 # Reading Files
