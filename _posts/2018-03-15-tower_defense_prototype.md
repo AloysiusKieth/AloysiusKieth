@@ -1,10 +1,10 @@
 ---
 unity_dir: survival_game
 unity_img: survival.png
-title:  "TD"
+title:  "A Prototype Survival Game"
 date:   2018-03-15
 categories:
-  - 3D tutorial
+  - 3D game
 tags:
   - playable
 ---
