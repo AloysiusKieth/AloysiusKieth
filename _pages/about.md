@@ -2,7 +2,7 @@
 layout: single
 title: "About Me"
 permalink: /about/
-date: 2017-10-11
+date: 2018-03-16
 ---
 
-Going to program some stuff.
+This space is for showing my works.
